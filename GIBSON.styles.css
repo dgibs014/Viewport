@@ -1,7 +1,7 @@
 /*XYOUR NAME GOES HERE */
 Danielle Gibson
 /*X--------------- ADD CSS RESET TO THE FILE HERE --------------- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/*Xhttp://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/*XHTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -51,8 +51,8 @@ table {
 }
 
 
-/* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
-/* ---------- VARIABLES ---------- */
+/*X----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
+/*X---------- VARIABLES ---------- */
 :root{
     --red: #760029;
     --pink: #9a0093;
@@ -68,7 +68,7 @@ table {
     --dark-gray: #222;
 }
 
-/* ---------- GLOBAL STYLES ---------- */
+/*X---------- GLOBAL STYLES ---------- */
 *{
     box-sizing: border-box;
     line-height: 1.35;
@@ -76,16 +76,22 @@ table {
 
 
 
-/* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
-/* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+/*X----- CHECK FOR USER DARK MODE PREFERENCE ----- */
+/*X--------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-gray);
+        color: var(--white);
+    }
+}
 
-/* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+/*XCHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
 
-/* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+/*X--------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 
 
-/* ----- HEADINGS ----- */
+/*X----- HEADINGS ----- */
 h1, h2, h3, h4{
     font-weight: bold;
 }
@@ -101,15 +107,15 @@ h2{
     display: inline;
 }
 
-/* ----- IMAGES ----- */
+/*X----- IMAGES ----- */
 img{
     display: block;
     max-width: 100%;
     margin: 0.5em 0;
 }
 
-/* ----- ANIMATED ICON ----- */
-/* Icon and animation code from https://typogram.github.io/Anicons/ */
+/*X----- ANIMATED ICON ----- */
+/*XIcon and animation code from https://typogram.github.io/Anicons/ */
 .icon{
     font-family: "Anicons Regular";
     font-size: 2em;
@@ -138,12 +144,16 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
+@media (prefers-reduced-motion: reduce) {
+
     @-webkit-keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
+        
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
