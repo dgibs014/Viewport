@@ -142,8 +142,8 @@ footer .icon{
 
 
 
-/* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
-/* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
+/*X----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
+/*X--------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
 @media (prefers-reduced-motion: reduce) {
 
     @-webkit-keyframes icon-animation {
@@ -154,11 +154,11 @@ footer .icon{
     }
         
 }
-/* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
+/*X--------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
 
-/* ----- TEXT ----- */
+/*X----- TEXT ----- */
 p, small{
     font-size: 1em;
     margin: 0.25em;
@@ -166,7 +166,7 @@ p, small{
     max-width: 75ch;
 }
 
-/* ----- MAIN/HEADER/FOOTER ----- */
+/*X----- MAIN/HEADER/FOOTER ----- */
 main, header, footer{
     font-family: sans-serif;
     color: var(--dark-gray);
@@ -181,13 +181,13 @@ main{
     max-width: 1795px;
 }
 
-/* ----- CONTAINERS ----- */
+/*X----- CONTAINERS ----- */
 section{
     margin: 1em 0;
     padding: 1em;
 }
 
-/* ---------- EXTRA SMALL SCREEN STYLES ---------- */
+/*X---------- EXTRA SMALL SCREEN STYLES ---------- */
 header, footer{
     background-color: var(--pink);
     color: var(--white);
