@@ -316,10 +316,15 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+    /*img{
         width: 300px;
         max-width: 300px;
-    } */
+    }*/
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
